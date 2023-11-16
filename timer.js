@@ -40,7 +40,7 @@ function myCallback() {
     const leaveTime = minutesToTime(leaveTimeInMinutes);
 
     // Alert the leave time
-    alert(`You can leave the office at: ${leaveTime}`);
+    alert(`Productivity Tracker: Next Phase at ${leaveTime}`);
 }
 
 myCallback();
