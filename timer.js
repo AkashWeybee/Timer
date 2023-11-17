@@ -14,9 +14,8 @@ function myCallback() {
     }
 
     // Retrieve the logged time
-    const loggedTimeElements = document.querySelectorAll('.staff_logged_time .panel-body ._total');
-    const lastLoggedTimeElement = loggedTimeElements[loggedTimeElements.length - 1];
-    const loggedTime = lastLoggedTimeElement.textContent.trim();
+    const loggedTimeElement = document.querySelector('.total_logged_time_timesheets_staff_h');
+    const loggedTime = loggedTimeElement.textContent.replace('Total Logged Time:', '').trim();
 
     // Office required time
     const officeRequiredTime = '08:15';
