@@ -25,7 +25,7 @@ function myCallback() {
     const currentTime = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
 
     // Calculate the remaining time in the office
-    const remainingTimeInMinutes = timeToMinutes(officeRequiredTime) - timeToMinutes(loggedTime);
+    let remainingTimeInMinutes = timeToMinutes(officeRequiredTime) - timeToMinutes(loggedTime);
 
     // Check if current time is before 13:30 (1:30 PM)
     const lunchBreakTime = '13:30';
